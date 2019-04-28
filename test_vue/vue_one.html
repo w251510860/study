@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一个vue作品</title>
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+    <h1>site: {{site}}</h1>
+    <h1>url: {{url}}</h1>
+    <h1>{{details()}}</h1>
+    <script type="text/javascript>">
+        var vm = new new Vue({
+            el: '#vue_det',
+            data: {
+                site: "菜鸟",
+                url: "www.fairy.com",
+                alexa: "10000"
+            },
+            methods: {
+                details: function() {
+                    return this.site + '学海无涯，梦想做舟'
+                }
+            }
+        })
+    </script>
+</body>
+</html>
